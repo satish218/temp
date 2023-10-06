@@ -5,7 +5,7 @@ import (
 
 	"github.com/satish218/temp/pkg/config"
 	"github.com/satish218/temp/pkg/models"
-	"github.com/satish218/temp/render"
+	"github.com/satish218/temp/pkg/render"
 )
 
 // Repo the repository used by the handlers

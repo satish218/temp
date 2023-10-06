@@ -9,7 +9,7 @@ import (
 	"github.com/alexedwards/scs/v2"
 	"github.com/satish218/temp/pkg/config"
 	"github.com/satish218/temp/pkg/handlers"
-	"github.com/satish218/temp/render"
+	"github.com/satish218/temp/pkg/render"
 )
 
 const portNumber = ":8080"

@@ -3,10 +3,10 @@ package render
 import (
 	"bytes"
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
-	"text/template"
 
 	"github.com/satish218/temp/pkg/config"
 	"github.com/satish218/temp/pkg/models"
