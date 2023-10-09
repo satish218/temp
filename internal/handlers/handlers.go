@@ -3,12 +3,11 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/satish218/temp/internal/config"
+	"github.com/satish218/temp/internal/models"
+	"github.com/satish218/temp/internal/render"
 	"log"
 	"net/http"
-
-	"github.com/satish218/temp/pkg/config"
-	"github.com/satish218/temp/pkg/models"
-	"github.com/satish218/temp/pkg/render"
 )
 
 // Repo the repository used by the handlers
@@ -95,7 +94,7 @@ func (m *Repository) AvailabilityJson(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
-	
+
 	w.Header().Set("content-type", "application/json")
 	w.Write(out)
 }

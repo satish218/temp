@@ -1,12 +1,12 @@
 package main
 
 import (
+	"github.com/satish218/temp/internal/config"
+	"github.com/satish218/temp/internal/handlers"
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/satish218/temp/pkg/config"
-	"github.com/satish218/temp/pkg/handlers"
 )
 
 func routes(app *config.AppConfig) http.Handler {
@@ -27,7 +27,7 @@ func routes(app *config.AppConfig) http.Handler {
 	mux.Get("/majors-suite", handlers.Repo.Majors)
 	mux.Get("/search-availability", handlers.Repo.Availability)
 	mux.Post("/search-availability", handlers.Repo.PostAvailability)
-	mux.Get("/search-availability-json", handlers.Repo.AvailabilityJson)
+	mux.Post("/search-availability-json", handlers.Repo.AvailabilityJson)
 	mux.Get("/contact", handlers.Repo.Contact)
 
 	mux.Get("/make-reservation", handlers.Repo.Reservation)

@@ -3,14 +3,14 @@ package render
 import (
 	"bytes"
 	"fmt"
+	"github.com/satish218/temp/internal/config"
+	"github.com/satish218/temp/internal/models"
 	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
 
 	"github.com/justinas/nosurf"
-	"github.com/satish218/temp/pkg/config"
-	"github.com/satish218/temp/pkg/models"
 )
 
 var functions = template.FuncMap{}

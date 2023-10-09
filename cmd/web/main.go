@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/satish218/temp/internal/config"
+	"github.com/satish218/temp/internal/handlers"
+	"github.com/satish218/temp/internal/render"
 	"log"
 	"net/http"
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/satish218/temp/pkg/config"
-	"github.com/satish218/temp/pkg/handlers"
-	"github.com/satish218/temp/pkg/render"
 )
 
 const portNumber = ":8080"
